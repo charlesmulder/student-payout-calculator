@@ -1,0 +1,5 @@
+*.swp
+vendor
+.phplint-cache
+.phpunit.result.cache
+challenge.pdf
