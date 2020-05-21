@@ -4,6 +4,7 @@
 
 ## Assumptions
 
+- Input data is well formatted and complete with no gaps. 
 - Fuel allowance forms part of travel allowance. No travel allowance means no fuel allowance.  
 - Travel allowance calculation includes both directions. To work from home and back home from work. 
 - Distance calculation in kilometers is rounded to 2 decimal points.
