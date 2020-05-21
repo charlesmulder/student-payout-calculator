@@ -2,7 +2,17 @@
 
 # Student payout calculator
 
-## Docker
+## Assumptions
+
+- Fuel allowance forms part of travel allowance. No travel allowance means no fuel allowance.  
+- Travel allowance calculation includes both directions. To work from home and back home from work. 
+- Distance calculation in kilometers is rounded to 2 decimal points.
+- 5km travel allowance threshold is for one way.
+- Financial calculations are done in cents due to limited precision of floating point numbers. Final result is converted to Euros for display.
+
+## Quickstart
+
+### Docker
 
 Calculate payout per student
 
@@ -16,7 +26,7 @@ Run tests
 docker run --rm -ti --volume $PWD:/app composer run-script test
 ```
 
-## Local
+### Local
 
 Install deps
 
