@@ -12,9 +12,14 @@
         "lint": "phplint ./ --exclude=vendor",
         "test": [
             "Composer\\Config::disableProcessTimeout",
+            "@composer install",
             "phpunit --bootstrap vendor/autoload.php --testdox --colors=always --whitelist lib --coverage-text"
         ],
-        "security": "security-checker security:check composer.lock"
+        "security": "security-checker security:check composer.lock",
+        "calc": [
+            "@composer install",
+            "@php main.php"
+        ]
     },
     "autoload": {
         "psr-4": {

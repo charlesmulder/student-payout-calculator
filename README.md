@@ -1,14 +1,26 @@
 # Student payout calculator
 
-## TODO
-
 - [X] Unit tests
-- [ ] Payout to match challenge example?
-- [ ] Payouts for all students
-- [ ] Main function
-- [ ] Run in Docker container
+- [X] Payout to match challenge example?
+- [X] Payouts for all students
+- [X] Main function
+- [X] Run in Docker container
 - [ ] CI
 - [ ] Generate docs
+
+## Docker
+
+Calculate payout per student
+
+```sh
+docker run --rm -ti --volume $PWD:/app composer run-script calc
+```
+
+Run tests
+
+```
+docker run --rm -ti --volume $PWD:/app composer run-script test
+```
 
 ## Local
 
@@ -16,6 +28,12 @@ Install deps
 
 ```sh
 composer install
+```
+
+Calculate payout per student
+
+```sh
+composer calc
 ```
 
 Run unit tests
