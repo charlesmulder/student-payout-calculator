@@ -2,14 +2,6 @@
 
 # Student payout calculator
 
-- [X] Unit tests
-- [X] Payout to match challenge example?
-- [X] Payouts for all students
-- [X] Main function
-- [X] Run in Docker container
-- [X] CI
-- [ ] Generate docs
-
 ## Docker
 
 Calculate payout per student
@@ -56,6 +48,8 @@ Run security check
 composer security
 ```
 
+## Documentation
+
 Generate documentation
 
 ```sh
@@ -67,3 +61,4 @@ Serve documentation
 ```sh
 php -S localhost:8000 -t docs
 ```
+
