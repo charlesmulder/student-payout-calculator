@@ -22,7 +22,7 @@ class LocationTest extends TestCase
     public function testCalculatesDistanceBetweenTwoPoints() {
         $workplace = Location::parse("(2, 4)");
         $home = Location::parse("(-3, 8)");
-        $this->assertSame(6.4031242374328485, Location::distance($workplace, $home));
+        $this->assertSame(6.4, Location::distance($workplace, $home));
     }
 
 }

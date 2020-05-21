@@ -25,12 +25,12 @@ class Location {
      *   0 => int,
      *   1 => int
      * ]
-     * @return float Distance in km
+     * @return float Distance in km rounded to 2 decimal places
      */
     public static function distance( array $a, array $b) : float {
         $x = $b[0] - $a[0];
         $y = $b[1] - $a[1];
-        return sqrt(($x ** 2) + ($y ** 2));
+        return round(sqrt(($x ** 2) + ($y ** 2)), 2);
     }
 
 }
