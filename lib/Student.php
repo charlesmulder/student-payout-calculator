@@ -2,8 +2,7 @@
 
 namespace Veri;
 
-use \DateTime;
-use \DateTimeZone;
+use \DateTime, \DateTimeZone;
 
 class Student {
 

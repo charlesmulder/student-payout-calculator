@@ -1,7 +1,6 @@
 <?php
 
-use Veri\Csv;
-use Veri\Workplace;
+use Veri\Csv, Veri\Workplace;
 
 use PHPUnit\Framework\TestCase;
 

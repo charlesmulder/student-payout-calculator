@@ -1,7 +1,6 @@
 <?php
 
-use Veri\Csv;
-use Veri\Attendance;
+use Veri\Csv, Veri\Attendance;
 use PHPUnit\Framework\TestCase;
 
 class AttendanceTest extends TestCase

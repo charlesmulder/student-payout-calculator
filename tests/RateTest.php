@@ -3,7 +3,6 @@
 use Veri\Rate;
 
 use PHPUnit\Framework\TestCase;
-use Faker\Factory;
 
 class RateTest extends TestCase {
 
