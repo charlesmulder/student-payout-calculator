@@ -71,18 +71,4 @@ class RateTest extends TestCase {
         $this->assertSame(Rate::age(24), 8100);
     }
 
-    /*
-    public function testRateForAttendedDay() {
-        $attendance = [
-            'id' => 19,
-            'name' => 'Tiffany Jones',
-            'location' => [0, 10],
-            'dob' => '2003-10-14',
-            'workplace_id' => 2,
-            'status' => 'AT'
-        ];
-        $this->assertSame(Rate::day($attendance), );
-    }
-     */
-
 }

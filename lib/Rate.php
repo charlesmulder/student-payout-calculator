@@ -6,12 +6,16 @@ use Veri\Location, Veri\Student, Veri\Workplace;
 
 class Rate {
 
+    /**
+     * @return int Amount in cents
+     */
     public static function meal() : int {
         return 550;
     }
 
     /**
-     * @param int $km Kilometers
+     * @param float $km Kilometers
+     * @return int Amount in cents
      */
     public static function km( float $km ) : int {
         if($km < 5) {
@@ -20,13 +24,16 @@ class Rate {
         return abs($km)*109;
     }
 
+    /**
+     * @return int Amount in cents
+     */
     public static function fuel() : int {
         return 100;
     }
 
     /**
      * @param int $age 
-     * @return int
+     * @return int Amount in cents
      */
     public static function age( int $age ) : int {
         if( $age < 18 ) 
@@ -41,7 +48,7 @@ class Rate {
     /**
      * @param array $attendance Attendance record on a single student on a specific event day
      * @param array $workplaces List of workplaces
-     * @return int
+     * @return int Amount in cents
      */
     public static function day( array $attendance, array $workplaces ) : int {
 
