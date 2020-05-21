@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/charlesmulder/student-payout-calculator.svg?token=1Tzw8t7hAJYswucSUiKm&branch=master)](https://travis-ci.com/charlesmulder/student-payout-calculator)
+
 # Student payout calculator
 
 - [X] Unit tests
@@ -5,7 +7,7 @@
 - [X] Payouts for all students
 - [X] Main function
 - [X] Run in Docker container
-- [ ] CI
+- [X] CI
 - [ ] Generate docs
 
 ## Docker
