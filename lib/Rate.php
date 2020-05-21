@@ -54,7 +54,9 @@ class Rate {
     }
 
     /**
-     * @param array $attendance Attendance record on a single student on a specific event day
+     * Calculate total payout for a single student on one day
+     *
+     * @param array $attendance Attendance record for a single student on a specific event day
      * @param array $workplaces List of workplaces
      * @return int Amount in cents
      */
