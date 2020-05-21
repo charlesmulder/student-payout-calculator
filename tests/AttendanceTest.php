@@ -13,7 +13,7 @@ class AttendanceTest extends TestCase
     public function testGetStudentIds() {
         $file = file(sprintf('%s/attendance.csv', getcwd()));
         $attendance = Csv::parse($file);
-        $ids = Attendance::getStudentIds($attendance );
+        $ids = Attendance::getStudentIds($attendance);
         for($i=1; $i<count($ids); $i++) {
             $this->assertLessThan( $ids[$i], $ids[$i-1] );
         }
