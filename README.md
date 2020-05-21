@@ -55,3 +55,15 @@ Run security check
 ```sh
 composer security
 ```
+
+Generate documentation
+
+```sh
+phpdoc -d ./lib -t ./docs
+```
+
+Serve documentation
+
+```sh
+php -S localhost:8000 -t docs
+```
