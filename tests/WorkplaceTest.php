@@ -24,7 +24,9 @@ class WorkplaceTest extends TestCase
     public function testByRandomId() {
         $file = file( sprintf('%s/workplaces.csv', getcwd()) );
         $workplaces = Csv::parse($file);
-        $workplace = Workplace::byId( rand(1, 10), $workplaces );
+        $random_id = rand(1, 10);
+        $workplace = Workplace::byId( $random_id, $workplaces );
+        $this->assertEquals($random_id, $workplace['id']);
         $this->assertRegExp("/\d+/", $workplace['id']);
         $this->assertRegExp("/\w+/", $workplace['name']);
         $this->assertContainsOnly('integer', $workplace['location']);
