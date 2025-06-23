@@ -1,4 +1,4 @@
-![Test Status](https://github.com/charlesmulder/student-payout-calculator/actions/workflows/ci.yml/badge.svg)
+![Test Status](https://github.com/charlesmulder/student-payout-calculator/actions/workflows/ci.yaml/badge.svg)
 
 # Student payout calculator
 
