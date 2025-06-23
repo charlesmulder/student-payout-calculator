@@ -25,7 +25,7 @@ class Rate {
         if($km < 5) {
             return 0;
         }
-        return abs($km)*109;
+        return intval(abs($km)*109);
     }
 
     /**

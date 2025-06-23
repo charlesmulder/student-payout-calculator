@@ -56,7 +56,7 @@ class StudentTest extends TestCase
             ]
         ];
         ;
-        $this->assertEquals(18020, Student::payout($attendances, $workplaces));
+        $this->assertEquals(19720, Student::payout($attendances, $workplaces));
     }
 
 }

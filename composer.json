@@ -2,18 +2,14 @@
     "name": "veri/student-payout-calculator",
     "description": "Student payout calculator",
     "type": "library",
-    "authors": [
-        {
-            "name": "Charles Mulder",
-            "email": "charlesmulder@protonmail.com"
-        }
-    ],
+	"license": "proprietary",
     "scripts": {
+		"all": [ "@lint", "@test", "@security" ],
         "lint": "phplint ./ --exclude=vendor",
         "test": [
             "Composer\\Config::disableProcessTimeout",
             "@composer install",
-            "phpunit --bootstrap vendor/autoload.php --testdox --colors=always --whitelist lib --coverage-text"
+            "phpunit --bootstrap vendor/autoload.php --testdox --colors=always --whitelist lib"
         ],
         "security": "security-checker security:check composer.lock",
         "calc": [
@@ -26,12 +22,13 @@
             "Veri\\": "lib"
         }
     },
-    "require": {},
     "require-dev": {
         "overtrue/phplint": "^2.0",
         "phpunit/phpunit": "^8.5",
         "phpunit/php-code-coverage": "^7.0",
-        "sensiolabs/security-checker": "^6.0",
-        "fzaninotto/faker": "^1.9"
+        "enlightn/security-checker": "^1.11"
+    },
+    "require": {
+        "fakerphp/faker": "^1.24"
     }
 }
