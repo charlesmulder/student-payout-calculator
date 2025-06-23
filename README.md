@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/charlesmulder/student-payout-calculator.svg?token=1Tzw8t7hAJYswucSUiKm&branch=master)](https://travis-ci.com/charlesmulder/student-payout-calculator)
+![Test Status](https://github.com/charlesmulder/student-payout-calculator/actions/workflows/ci.yml/badge.svg)
 
 # Student payout calculator
 
